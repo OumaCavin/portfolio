@@ -65,6 +65,7 @@ document.querySelectorAll('.project-link').forEach(link => {
     });
 });
 
+
 // Dark mode toggle
 const toggleButton = document.getElementById('dark-mode-toggle');
 
@@ -72,18 +73,5 @@ toggleButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     document.querySelector('header').classList.toggle('dark-mode');
     document.querySelector('footer').classList.toggle('dark-mode');
-    
-    // Apply dark mode to each section
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.classList.toggle('dark-mode');
-    });
-});
-
-// Set the current year in the footer
-document.addEventListener('DOMContentLoaded', function() {
-    const yearSpan = document.getElementById('year');
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
 });
 

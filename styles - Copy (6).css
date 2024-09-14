@@ -111,7 +111,7 @@ footer.dark-mode p {
 
 section.dark-mode {
     background-color: #1a1a1a;
-    color: #e0e0e0; /* Ensure text color is white in dark mode */
+    color: #e0e0e0;
 }
 
 /* Dark mode toggle button */
