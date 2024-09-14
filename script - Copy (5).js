@@ -66,15 +66,16 @@ document.querySelectorAll('.project-link').forEach(link => {
 });
 
 // Dark mode toggle
-const darkModeToggle = document.getElementById('dark-mode-toggle');
+const toggleButton = document.getElementById('dark-mode-toggle');
 
-darkModeToggle.addEventListener('click', function() {
+toggleButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     document.querySelector('header').classList.toggle('dark-mode');
     document.querySelector('footer').classList.toggle('dark-mode');
     
     // Apply dark mode to each section
-    document.querySelectorAll('section').forEach(section => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
         section.classList.toggle('dark-mode');
     });
 });
@@ -86,10 +87,3 @@ document.addEventListener('DOMContentLoaded', function() {
     yearSpan.textContent = currentYear;
 });
 
-// Hamburger menu toggle functionality
-const menuToggle = document.getElementById('menu-toggle');
-const navMenu = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('show');
-});

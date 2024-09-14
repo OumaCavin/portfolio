@@ -25,84 +25,25 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
 }
 
-/* Navigation Styles */
-nav {
-    position: relative;
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-/* Hamburger Menu Styles */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-    transition: 0.3s;
-}
-
-/* Mobile and Tablet Styles */
-@media (max-width: 1024px) {
-    /* Adjust styles for tablets if needed */
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #333;
-        width: 200px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 15px 0;
-        text-align: center;
-    }
-
-    nav ul li a {
-        color: #fff;
-    }
 }
 
 /* Section styles */
@@ -236,4 +177,17 @@ body.dark-mode .form-group textarea {
     background-color: #333;
     border: 1px solid #555;
     color: #e0e0e0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
