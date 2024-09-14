@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouma's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ouma's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#languages" class="scroll-link">Languages</a></li>
+                <li><a href="#education" class="scroll-link">Education</a></li>
+                <li><a href="#projects" class="scroll-link">Projects</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Ouma, a passionate IT graduate with a deep interest in web development, machine learning, and data analytics. I have a practical problem-solving approach and a drive to see projects through to completion.</p>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section id="languages">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>PHP</li>
+            <li>C#</li>
+            <li>MATLAB</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Educational Background</h2>
+        <p>I hold a degree in IT and have completed several professional certifications including Microsoft Certified: Azure Fundamentals, CCNA, and HCIA.</p>
+        <a href="https://ouma-cavin-36.tiiny.site" class="btn">Download My CV</a>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Web Development: Exploring modern web technologies.</li>
+            <li>Machine Learning: Solving real-world challenges with algorithms.</li>
+            <li>AI and Tech Innovations: Contributing to AI-focused projects.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#" class="project-link" data-project="project1">Telemedicine App</a>: A web-based app aimed at facilitating remote healthcare services.</li>
+            <li><a href="#" class="project-link" data-project="project2">Hospital DB SQL Queries</a>: SQL project that involved advanced data retrieval techniques.</li>
+        </ul>
+
+        <!-- Hidden project details -->
+        <div id="project-details" style="display: none;">
+            <h3 id="project-title"></h3>
+            <p id="project-description"></p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="submit-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-message" style="color: red;"></p>
+        </form>
+    </section>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" class="btn">Toggle Dark Mode</button>
+
+    <footer>
+        <p>&copy; 2024 Ouma's Portfolio</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

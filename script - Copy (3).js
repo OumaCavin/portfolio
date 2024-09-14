@@ -65,7 +65,6 @@ document.querySelectorAll('.project-link').forEach(link => {
     });
 });
 
-
 // Dark mode toggle
 const toggleButton = document.getElementById('dark-mode-toggle');
 
@@ -74,4 +73,3 @@ toggleButton.addEventListener('click', function() {
     document.querySelector('header').classList.toggle('dark-mode');
     document.querySelector('footer').classList.toggle('dark-mode');
 });
-

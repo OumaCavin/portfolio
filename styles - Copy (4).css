@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 /* Container styles */
@@ -85,7 +84,6 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-
 /* Dark mode styles */
 body.dark-mode {
     background-color: #121212;
@@ -96,21 +94,11 @@ header.dark-mode {
     background-color: #1a1a1a;
 }
 
-header.dark-mode h1,
-header.dark-mode nav ul li a {
-    color: #e0e0e0; /* Change text color in header for dark mode */
-}
-
 footer.dark-mode {
     background-color: #1a1a1a;
 }
-
-footer.dark-mode p {
-    color: #e0e0e0; /* Change text color in footer for dark mode */
-}
-
 /* Dark mode toggle button */
-#dark-mode-toggle {
+/* #dark-mode-toggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -120,11 +108,18 @@ footer.dark-mode p {
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.3s;
-}
+} */
 
-#dark-mode-toggle:hover {
-    background-color: #555;
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 /* Responsive styles */

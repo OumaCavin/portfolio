@@ -22,75 +22,87 @@
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm Ouma, a passionate IT graduate with a deep interest in web development, machine learning, and data analytics. I have a practical problem-solving approach and a drive to see projects through to completion.</p>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm Ouma, a passionate IT graduate with a deep interest in web development, machine learning, and data analytics. I have a practical problem-solving approach and a drive to see projects through to completion.</p>
+        </section>
+    </div>
 
     <!-- Programming Languages Section -->
-    <section id="languages">
-        <h2>Programming Languages</h2>
-        <ul>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>PHP</li>
-            <li>C#</li>
-            <li>MATLAB</li>
-        </ul>
-    </section>
+    <div class="container">
+        <section id="languages">
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>MATLAB</li>
+            </ul>
+        </section>
+    </div>
 
     <!-- Education Section -->
-    <section id="education">
-        <h2>Educational Background</h2>
-        <p>I hold a degree in IT and have completed several professional certifications including Microsoft Certified: Azure Fundamentals, CCNA, and HCIA.</p>
-        <a href="https://ouma-cavin-36.tiiny.site" class="btn">Download My CV</a>
-    </section>
+    <div class="container">
+        <section id="education">
+            <h2>Educational Background</h2>
+            <p>I hold a degree in IT and have completed several professional certifications including Microsoft Certified: Azure Fundamentals, CCNA, and HCIA.</p>
+            <a href="https://ouma-cavin-36.tiiny.site" class="btn">Download My CV</a>
+        </section>
+    </div>
 
     <!-- Interests Section -->
-    <section id="interests">
-        <h2>Interests</h2>
-        <ul>
-            <li>Web Development: Exploring modern web technologies.</li>
-            <li>Machine Learning: Solving real-world challenges with algorithms.</li>
-            <li>AI and Tech Innovations: Contributing to AI-focused projects.</li>
-        </ul>
-    </section>
+    <div class="container">
+        <section id="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Web Development: Exploring modern web technologies.</li>
+                <li>Machine Learning: Solving real-world challenges with algorithms.</li>
+                <li>AI and Tech Innovations: Contributing to AI-focused projects.</li>
+            </ul>
+        </section>
+    </div>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#" class="project-link" data-project="project1">Telemedicine App</a>: A web-based app aimed at facilitating remote healthcare services.</li>
-            <li><a href="#" class="project-link" data-project="project2">Hospital DB SQL Queries</a>: SQL project that involved advanced data retrieval techniques.</li>
-        </ul>
+    <div class="container">
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#" class="project-link" data-project="project1">Telemedicine App</a>: A web-based app aimed at facilitating remote healthcare services.</li>
+                <li><a href="#" class="project-link" data-project="project2">Hospital DB SQL Queries</a>: SQL project that involved advanced data retrieval techniques.</li>
+            </ul>
 
-        <!-- Hidden project details -->
-        <div id="project-details" style="display: none;">
-            <h3 id="project-title"></h3>
-            <p id="project-description"></p>
-        </div>
-    </section>
+            <!-- Hidden project details -->
+            <div id="project-details" style="display: none;">
+                <h3 id="project-title"></h3>
+                <p id="project-description"></p>
+            </div>
+        </section>
+    </div>
 
     <!-- Contact Form Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form" action="submit-form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="container">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit" class="btn">Send Message</button>
-            <p id="form-message" style="color: red;"></p>
-        </form>
-    </section>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-message" style="color: red;"></p>
+            </form>
+        </section>
+    </div>
 
     <!-- Dark Mode Toggle Button -->
     <button id="dark-mode-toggle" class="btn">Toggle Dark Mode</button>
