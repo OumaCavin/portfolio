@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 /* Container styles */
@@ -109,11 +109,6 @@ footer.dark-mode p {
     color: #e0e0e0; /* Change text color in footer for dark mode */
 }
 
-section.dark-mode {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-
 /* Dark mode toggle button */
 #dark-mode-toggle {
     position: fixed;
@@ -130,53 +125,6 @@ section.dark-mode {
 
 #dark-mode-toggle:hover {
     background-color: #555;
-}
-
-/* Form styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"] {
-    height: 40px; /* Adjust height as needed */
-}
-
-.form-group textarea {
-    resize: vertical; /* Allow vertical resize only */
-}
-
-/* Dark mode styles for form elements */
-body.dark-mode .form-group label {
-    color: #e0e0e0;
-}
-
-body.dark-mode .form-group input,
-body.dark-mode .form-group textarea {
-    background-color: #333;
-    border: 1px solid #555;
-    color: #e0e0e0;
 }
 
 /* Responsive styles */
