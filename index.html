@@ -1,61 +1,92 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ouma's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
+        <h1>Ouma's Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#languages">Languages</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#interests">Interests</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm [Your Name], a passionate web developer...</p>
-        </section>
-        <section id="education">
-            <h2>Educational Background</h2>
-            <p>I hold a degree in [Your Degree] from [Your University]. <a href="link-to-your-cv" download>Download My CV</a></p>
-        </section>
-        <section id="interests">
-            <h2>Interests</h2>
-            <ul>
-                <li><strong>Web Development</strong>: Exploring the latest trends...</li>
-                <li><strong>Tech Innovations</strong>: Staying updated with advancements...</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="link-to-project1">Project 1</a>: Brief description...</li>
-                <li><a href="link-to-project2">Project 2</a>: Brief description...</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea><br><br>
-                <input type="submit" value="Send">
-            </form>
-        </section>
-    </main>
-    <script src="script.js"></script>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Ouma, a passionate IT graduate with a deep interest in web development, machine learning, and data analytics. I have a practical problem-solving approach and a drive to see projects through to completion.</p>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section id="languages">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>PHP</li>
+            <li>C#</li>
+            <li>MATLAB</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Educational Background</h2>
+        <p>I hold a degree in IT and have completed several professional certifications including Microsoft Certified: Azure Fundamentals, CCNA, and HCIA.</p>
+        <a href="link-to-your-CV" class="btn">Download My CV</a>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Web Development: Exploring modern web technologies.</li>
+            <li>Machine Learning: Solving real-world challenges with algorithms.</li>
+            <li>AI and Tech Innovations: Contributing to AI-focused projects.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="link-to-project1">Telemedicine App</a>: A web-based app aimed at facilitating remote healthcare services.</li>
+            <li><a href="link-to-project2">Hospital DB SQL Queries</a>: SQL project that involved advanced data retrieval techniques.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ouma's Portfolio</p>
+    </footer>
 </body>
 </html>
